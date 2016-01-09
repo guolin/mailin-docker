@@ -5,5 +5,7 @@ echo " port: $SERVER_PORT webhook: $WEBHOOK  "
 echo ""
 echo " Gook luck!"
 echo "========================================================================"
+which mailin
 
-authbind mailin --port $SERVER_PORT --webhook $WEBHOOK 
+
+sudo mailin --port $SERVER_PORT --webhook $WEBHOOK 
