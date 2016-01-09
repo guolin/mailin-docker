@@ -16,9 +16,6 @@ RUN npm install -g mailin
 ENV SERVER_PORT 25
 ENV WEBHOOK http://domain.com
 
-ADD /model/mailin.js /usr/lib/node_modules/mailin/lib/mailin.js
-RUN chmod 775 /usr/lib/node_modules/mailin/lib/mailin.js
-
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
 
