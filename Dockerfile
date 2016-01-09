@@ -4,7 +4,7 @@ MAINTAINER guolin <guo.lin@outlook.com>
 
 RUN apt-get update && \
     apt-get install -y --force-yes -m python-pip python-m2crypto &&\
-    apt-get install -y --force-yes -m spamassassin spamc &&\
+    apt-get install -y --force-yes -m rsyslog spamassassin spamc &&\
     apt-get install -y --force-yes -m curl authbind &&\
     apt-get clean && \
     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - &&\
